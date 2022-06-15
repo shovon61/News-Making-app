@@ -1,0 +1,20 @@
+<h1>View All News Below</h1>
+<!-- <ul>
+    <li *ngFor="let item of news">
+        <span style="display: inline-block">{{ item.Headline }}</span>
+        <span style="display: inline-block">{{ item.SortDescription }}</span>
+        <span style="display: inline-block">{{ item.LongDescription }}</span>
+    </li>
+</ul> -->
+<table border="2">
+  <tr>
+    <td><b>Headline</b></td>
+    <td><b>SortDescription</b></td>
+    <td><b>LongDescription</b></td>
+  </tr>
+  <tr *ngFor="let item of news">
+    <td>{{ item.Headline }}</td>
+    <td>{{ item.SortDescription }}</td>
+    <td>{{ item.LongDescription }}</td>
+  </tr>
+</table>

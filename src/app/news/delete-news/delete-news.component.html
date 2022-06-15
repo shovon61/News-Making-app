@@ -1,0 +1,18 @@
+<h1>Confirm on delete the news</h1>
+<form class="example-form" [formGroup]="delateFormGroup" (ngSubmit)="deleteForm()">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Heading of The News</mat-label>
+    <input matInput placeholder="Heading" formControlName="Headline" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width2" appearance="fill">
+    <mat-label>Sortdescription of The News</mat-label>
+    <input matInput placeholder="Heading" formControlName="SortDescription" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width3" appearance="fill">
+    <mat-label>Detailes description of The News</mat-label>
+    <textarea matInput placeholder="Heading" formControlName="LongDescription"></textarea>
+    <!-- <input matInput placeholder="Heading" formControlName="description"> -->
+  </mat-form-field>
+  <button type="submit" mat-flat-button color="primary">Delete</button>
+</form>

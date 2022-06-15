@@ -1,0 +1,28 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 115%;
+}
+.example-full-width1 {
+  width: 50%;
+}
+.example-full-width2 {
+  width: 150%;
+}
+.example-full-width3 {
+  width: 200%;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.d {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

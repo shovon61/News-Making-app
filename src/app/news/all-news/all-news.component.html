@@ -1,0 +1,7 @@
+<h1>View All News</h1>
+<ul>
+  <li *ngFor="let item of news">
+    <span style="display: inline-block">{{ item.Headline }}</span>
+    <button routerLink="/news/update/{{ item.Id }}" mat-raised-button color="warn">Click For Edit</button>
+  </li>
+</ul>
