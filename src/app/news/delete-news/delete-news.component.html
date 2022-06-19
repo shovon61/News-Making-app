@@ -14,5 +14,6 @@
     <textarea matInput placeholder="Heading" formControlName="LongDescription"></textarea>
     <!-- <input matInput placeholder="Heading" formControlName="description"> -->
   </mat-form-field>
-  <button type="submit" mat-flat-button color="primary">Delete</button>
+  <button (click)="del('Deleted The Value : Complete')" type="submit" mat-flat-button color="primary">Delete</button>
+  <h2>{{ delval }}</h2>
 </form>

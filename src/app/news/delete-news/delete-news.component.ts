@@ -12,6 +12,7 @@ export class DeleteNewsComponent implements OnInit {
   newsId!: any;
   delateFormGroup!: FormGroup;
   newsDetails: any;
+  delval = '';
 
   constructor(
     private formBuilder: FormBuilder,
@@ -43,5 +44,9 @@ export class DeleteNewsComponent implements OnInit {
     this.newsService
       .deleteNewsFn(this.newsId, this.delateFormGroup.value)
       .subscribe((res) => console.log('delete', res));
+  }
+  del(val: any) {
+    console.warn('Value deleted', val);
+    this.delval = val;
   }
 }

@@ -14,6 +14,8 @@
     <mat-label>Detailes description of The News</mat-label>
     <textarea matInput formControlName="LongDescription"></textarea>
   </mat-form-field>
-
-  <button type="submit" mat-flat-button color="primary">Save Button</button>
+  <button (click)="show('Created The News : Complete')" type="submit" mat-flat-button color="primary">
+    Save Button
+  </button>
+  <h2>{{ display }}</h2>
 </form>

@@ -12,6 +12,7 @@ export class UpdateNewsComponent implements OnInit {
   newscreateUpdate!: FormGroup;
   NewsDetails!: any;
   NewsId!: any;
+  upsts = '';
   constructor(
     private mewsService: NewsService,
     private activatedRoute: ActivatedRoute,
@@ -44,5 +45,9 @@ export class UpdateNewsComponent implements OnInit {
       this.mewsService
         .updateNewsFn(this.NewsId, this.newscreateUpdate.value)
         .subscribe((res) => console.log('news update', res));
+  }
+  updatesatus(val: any) {
+    console.log('updated the val:', val);
+    this.upsts = val;
   }
 }

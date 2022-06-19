@@ -15,5 +15,8 @@
     <textarea matInput formControlName="LongDescription"></textarea>
   </mat-form-field>
 
-  <button type="submit" mat-flat-button color="primary">Click For Save the Edit</button>
+  <button type="submit" (click)="updatesatus('Edited The value : Complete')" mat-flat-button color="primary">
+    Click For Save the Edit
+  </button>
+  <h2>{{ upsts }}</h2>
 </form>

@@ -9,6 +9,7 @@ import { NewsService } from '../../news/service/news.service';
 })
 export class CreateNewsComponent implements OnInit {
   newscreate!: FormGroup;
+  display = '';
   constructor(private formBuilder: FormBuilder, private newsservice: NewsService) {}
 
   ngOnInit(): void {
@@ -23,5 +24,9 @@ export class CreateNewsComponent implements OnInit {
     console.log(this.newscreate.valid);
     if (this.newscreate.valid === true)
       this.newsservice.addNewsFn(this.newscreate.value).subscribe((res) => console.log(res));
+  }
+  show(val: any) {
+    console.log('created the value', val);
+    this.display = val;
   }
 }
